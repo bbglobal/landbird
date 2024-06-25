@@ -101,13 +101,13 @@ a:hover {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    font-size: 36.875px;
+    font-size: clamp(1.625rem, 1.3299rem + 1.5738vw, 2.3046875rem);
     line-height: normal;
     font-style: normal;
     padding: 7.302px;
     font-weight: 400;
     display: flex;
-    width: 314px;
+    width: clamp(12.5rem, 9.4067rem + 16.4978vw, 19.625rem);
     gap: 7.302px;
     border: none;
 }
@@ -135,8 +135,13 @@ a:hover {
     justify-content: center;
     align-items: flex-end;
     height: 15.5rem;
+    margin: 1.5rem;
     display: flex;
     width: 100%;
+}
+
+img {
+    max-width: 100%;
 }
 
 .divider {
@@ -555,7 +560,7 @@ a:hover {
 }
 
 .about-opening-txt {
-    padding: 3rem 5rem;
+    padding: 3rem 5vw;
     width: 67%;
     color: #000000b5;
     font-size: 20px;
@@ -590,7 +595,7 @@ a:hover {
 
 .about-sec-two-txt {
     color: #000000b0;
-    font-size: 38.604px;
+    font-size: clamp(1.60025rem, 1.2475rem + 1.8813vw, 2.41275rem);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -599,9 +604,9 @@ a:hover {
 }
 
 .about-sec-two-txt-wrapper {
-    position: absolute;
-    left: 40rem;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .about-sec-two-content-wrapper {
@@ -621,7 +626,6 @@ a:hover {
 .about-sec-two-content-wrapper p {
     color: #000000a1;
     text-align: center;
-    font-size: 16.192px;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
@@ -655,7 +659,7 @@ a:hover {
 .services h1 {
     color: var(--bs-white);
     text-shadow: 11px 10px 68.1px #000;
-    font-size: 3.61913rem;
+    font-size: clamp(2.61913rem, 2.185rem + 2.3155vw, 3.61913rem);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -668,7 +672,7 @@ a:hover {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 5rem;
+    padding: 6vw;
 }
 
 .departure-head {
@@ -739,8 +743,9 @@ a:hover {
 }
 
 .service-form {
+    margin-top: 10vw;
     width: 100%;
-    padding: 5rem;
+    padding: 5vw;
     border: 0.587px solid #9D5CF8;
     background: rgba(250, 248, 248, 0.12);
     backdrop-filter: blur(48.45000076293945px);
@@ -767,14 +772,14 @@ a:hover {
 }
 
 .lawyers-cards {
-    padding: 5rem;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
+    display: flex;
 }
 
 .lawyer-card-wrapper {
+    margin: 5vw auto;
     width: 24.8125rem;
     height: 33.3125rem;
     border-radius: 6.375rem 6.375rem 0rem 0rem;
@@ -784,7 +789,7 @@ a:hover {
 }
 
 .lawyer-card-inner {
-    width: 23.9375rem;
+    width: 100%;
     height: 19.8125rem;
     position: absolute;
     background: #ECECEC;
@@ -794,14 +799,13 @@ a:hover {
 .lawyer-card-img-wrapper {
     border: 6px solid #ECECEC;
     border-radius: 50%;
-    position: absolute;
+    position: relative;
     stroke-width: 6px;
     display: flex;
     height: 13.5rem;
     width: 13.5rem;
+    margin: 1rem auto;
     z-index: 1;
-    left: 5rem;
-    top: 3rem;
 }
 
 .lawyer-card-img-wrapper img {
@@ -831,7 +835,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
-    top: 20rem;
+    top: 3rem;
     z-index: 1;
     gap: 2rem;
 }
@@ -886,7 +890,7 @@ a:hover {
 .faq h1 {
     color: var(--bs-white);
     text-shadow: 58.037px 52.761px 359.301px var(--black);
-    font-size: 6.53856rem;
+    font-size: clamp(2.5rem, 0.7466rem + 9.3512vw, 6.53856rem);
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -895,16 +899,16 @@ a:hover {
 }
 
 .boxes-wrapper {
-    padding: 5rem;
+    padding: 5vw;
 }
 
 .faq-box {
     border-radius: 1rem;
     border: 1px solid #00000059;
     box-shadow: 0px 4px 4px 0px #00000040;
-    padding: 1rem 2rem;
-    margin: .5rem;
-    width: 32%;
+    padding: 1rem;
+    margin: 1.5rem auto;
+    width: 520px;
 }
 
 .box-title {
@@ -973,9 +977,11 @@ a:hover {
 
 .offices-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    gap: 1rem;
     justify-content: space-around;
-    padding: 5rem;
+    padding: 5vw;
 }
 
 .office {
@@ -1018,7 +1024,7 @@ a:hover {
 }
 
 .office-img img {
-    width: 23.92044rem;
+    width: 100%;
 }
 
 .contact-form-wrapper {
@@ -1029,12 +1035,12 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5rem;
+    padding: 5vw;
 }
 
 .contact-form {
     width: 40%;
-    padding: 5rem;
+    padding: 5vw;
     border-radius: 2.125rem;
     border: 1px solid #EFF0F6;
     background: rgba(250, 248, 248, 0.12);
@@ -1093,8 +1099,9 @@ a:hover {
     height: 30px;
     padding: 5px 26px;
     border-radius: 20px;
-    border: 1px solid var(--black);
+    margin: 1rem auto;
     background: var(--bs-white);
+    border: 1px solid var(--black);
     color: var(--black);
     display: flex;
     align-items: center;
@@ -1111,6 +1118,14 @@ a:hover {
 
 .mobile-header {
     display: none;
+}
+
+
+@media (max-width: 1460px) {
+    .about-sec-two-content-wrapper {
+        left: 30rem;
+        top: 6rem;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -1178,8 +1193,30 @@ a:hover {
         height: 527px;
     }
 
-    .btn-bird {
-        font-size: 26.875px;
-        width: 214px;
+    .about-opening-txt {
+        width: 100%;
     }
+
+    .about-sec-two-content-wrapper {
+        left: 3rem;
+        top: 15rem;
+        width: 80%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 587.90px) {
+    .about-sec-two-content-wrapper {
+        left: 0rem;
+        top: 15rem;
+        width: 100%;
+    }
+
+    .faq-box {
+        width: 100%;
+    }
+
 }
