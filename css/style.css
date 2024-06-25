@@ -356,71 +356,31 @@ img {
 }
 
 .testimonial-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 5rem 0;
+    padding: 5vw 0;
 }
 
 .slides {
-    position: relative;
-    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    background-position: center center;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 2rem;
+    background-image: url("../img/home/slide-two.svg");
 }
 
-.tes-img-left {
-    position: absolute;
-    max-width: 100%;
-    left: 45%;
-    top: 0;
-}
-
-.tes-img-center {
-    position: absolute;
-    max-width: 100%;
-    left: 40%;
-    top: -4rem;
-}
-
-.tes-img-right {
-    position: absolute;
-    max-width: 100%;
-    right: 45%;
-    top: 0;
-}
-
-.tes-head-left {
+.tes-head {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 22%;
-    left: 35%;
+
 }
 
-.tes-head-center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 10%;
-    left: 30%;
-}
-
-.tes-head-right {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 22%;
-    right: 35%;
-}
-
-.tes-head-left h5 {
+.tes-head h5 {
     color: var(--black);
     text-align: center;
     font-size: 18px;
@@ -430,47 +390,7 @@ img {
     margin: 0;
 }
 
-.tes-head-center h5 {
-    color: var(--black);
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 0;
-}
-
-.tes-head-right h5 {
-    color: var(--black);
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    margin: 0;
-}
-
-.tes-head-right .tag-line {
-    color: var(--black);
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-}
-
-.tes-head-center .tag-line {
-    color: var(--black);
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: capitalize;
-}
-
-.tes-head-left .tag-line {
+.tes-head .tag-line {
     color: var(--black);
     text-align: center;
     font-size: 12px;
@@ -490,42 +410,14 @@ img {
     text-transform: capitalize;
 }
 
-.tes-feedback-left {
-    position: absolute;
+.tes-feedback {
     color: var(--black);
     text-align: center;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    top: 10rem;
-    left: 3rem;
-    padding: 0 2rem;
-}
-
-.tes-feedback-center {
-    position: absolute;
-    color: var(--black);
-    text-align: center;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    top: 35%;
-    padding: 0 3rem;
-}
-
-.tes-feedback-right {
-    position: absolute;
-    color: var(--black);
-    text-align: center;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    top: 10rem;
-    right: 2rem;
-    padding: 0 2rem;
+    padding: 0 5rem;
 }
 
 .comma-left img {
@@ -1170,6 +1062,10 @@ img {
         position: fixed;
         width: 100%;
         left: -100%;
+    }
+
+    .tes-feedback {
+        padding: 0 2rem;
     }
 
     #checkbox {
