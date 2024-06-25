@@ -78,7 +78,7 @@ a:hover {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 10vw;
+    padding: 15vw;
     width: 100%;
     height: 927px;
 }
@@ -129,12 +129,14 @@ a:hover {
 }
 
 .expertise {
-    width: 100%;
-    padding: 10vw;
-    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    background-size: contain;
+    justify-content: center;
+    align-items: flex-end;
+    height: 15.5rem;
+    display: flex;
+    width: 100%;
 }
 
 .divider {
@@ -179,9 +181,6 @@ a:hover {
     line-height: normal;
     letter-spacing: -0.595px;
     text-transform: capitalize;
-    position: absolute;
-    bottom: 3rem;
-    left: 25%;
 }
 
 .ex-one {
@@ -1110,9 +1109,77 @@ a:hover {
     border-top: 1px solid #7B7E86;
 }
 
+.mobile-header {
+    display: none;
+}
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .bird-header {
         display: none;
+    }
+
+    .mobile-header {
+        background: linear-gradient(90deg, #024bc4a8 0%, var(--primary-bird) 100%);
+        backdrop-filter: blur(42.95px);
+        position: fixed;
+        display: block;
+        z-index: 99;
+        width: 100%;
+        width: 100%;
+    }
+
+    .mobile-header * {
+        font-family: "Land Bird Regular", sans-serif;
+        font-size: 18.95px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .mobile-header ul {
+        list-style: none;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .hamberger {
+        transform: rotate(90deg);
+        transition: all ease .5s;
+        font-size: 24px;
+    }
+
+    .mobile-inner {
+        background: linear-gradient(90deg, #024bc4a8 0%, var(--primary-bird) 100%);
+        backdrop-filter: blur(42.95px);
+        transition: all ease .5s;
+        position: fixed;
+        width: 100%;
+        left: -100%;
+    }
+
+    #checkbox {
+        display: none;
+    }
+
+    #checkbox:checked~.mobile-inner {
+        left: 0;
+    }
+
+    #checkbox:checked~ul .hamberger {
+        transform: rotate(0deg);
+    }
+
+    .nav-link {
+        padding: 1.5rem;
+    }
+
+    .hero-section {
+        padding-top: 20vh;
+        height: 527px;
+    }
+
+    .btn-bird {
+        font-size: 26.875px;
+        width: 214px;
     }
 }
