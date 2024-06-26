@@ -1,4 +1,5 @@
 $(document).ready(() => {
+  gsap.registerPlugin(ScrollTrigger)
 
   const lenis = new Lenis();
 
@@ -44,6 +45,45 @@ $(document).ready(() => {
     ]
   });
 
-  
+  const tl = gsap.timeline();
+
+  SplitType.create('.hero-txt')
+
+  gsap.set(".char", {
+    yPercent: 100
+  })
+
+  gsap.set(".line-inner", {
+    yPercent: 100
+  })
+
+  tl.to(".bar", {
+    yPercent: -100,
+    stagger: 0.05,
+    ease: "expo.easeInOut",
+    duraton: 1.7
+  }).to(".pre-loader", {
+    yPercent: -100
+  })
+
+  tl.to(".char", {
+    yPercent: 0,
+    stagger: 0.05,
+    duraton: 1.7,
+    ease: "expo.easeOut"
+  }, "cool kids")
+
+  tl.to(".line-inner", {
+    yPercent: 0,
+    stagger: 0.05,
+    duraton: 1.7,
+    ease: "expo.easeOut"
+  }, "cool kids")
+
+  tl.from(".btn-bird", {
+    opacity: 0,
+    duraton: 1.7,
+    ease: "expo.easeOut"
+  }, "cool kids")
 
 })

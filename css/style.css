@@ -65,6 +65,26 @@ html.lenis body {
     color: var(--bs-white);
 }
 
+.pre-loader {
+    position: fixed;
+    z-index: 101;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar-wrapper {
+    display: flex;
+}
+
+.bar {
+    width: 10vw;
+    height: 100vh;
+    background: var(--primary-bird);
+}
+
 .bird-header {
     background: linear-gradient(90deg, #024bc4a8 0%, var(--primary-bird) 100%);
     backdrop-filter: blur(42.95px);
@@ -120,6 +140,14 @@ a:hover {
     padding: 15vw;
     width: 100%;
     height: 927px;
+}
+
+.line {
+    overflow: hidden;
+}
+
+.line-wrapper {
+    overflow: hidden;
 }
 
 .hero-txt {
@@ -190,7 +218,7 @@ img {
     background: var(--bs-white);
 }
 
-.line {
+.lines {
     margin: 3rem 0;
     opacity: 1;
     background: var(--bs-white);
