@@ -57,11 +57,15 @@ $(document).ready(() => {
     yPercent: 100
   })
 
+  gsap.set(".btn-bird", {
+    opacity: 0
+  })
+
   tl.to(".bar", {
     yPercent: -100,
     stagger: 0.05,
-    ease: "expo.easeInOut",
-    duraton: 1.7
+    duraton: 1.7,
+    ease: "power2.inOut"
   }).to(".pre-loader", {
     yPercent: -100
   })
@@ -70,20 +74,23 @@ $(document).ready(() => {
     yPercent: 0,
     stagger: 0.05,
     duraton: 1.7,
-    ease: "expo.easeOut"
+    ease: "power2.out",
+    delay: -.6,
   }, "cool kids")
 
   tl.to(".line-inner", {
     yPercent: 0,
     stagger: 0.05,
     duraton: 1.7,
-    ease: "expo.easeOut"
+    ease: "power2.out",
+    delay: -.6,
   }, "cool kids")
 
-  tl.from(".btn-bird", {
-    opacity: 0,
+  tl.to(".btn-bird", {
+    opacity: 1,
     duraton: 1.7,
-    ease: "expo.easeOut"
+    ease: "power2.out",
+    delay: -.6,
   }, "cool kids")
 
 })
