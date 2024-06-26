@@ -6,6 +6,40 @@
     --black: #000;
 }
 
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--gradient-bird);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background: var(--primary-bird);
+}
+
 @font-face {
     font-family: Land Bird SemiBold;
     src: url("../fonts/Poppins/Poppins-SemiBold.ttf");
@@ -24,6 +58,11 @@
 * {
     color: var(--bs-white);
     font-family: "Land Bird Medium", sans-serif;
+}
+
+::selection {
+    background: var(--primary-bird);
+    color: var(--bs-white);
 }
 
 .bird-header {
@@ -311,7 +350,9 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .service h5 {
@@ -321,9 +362,6 @@ img {
     line-height: 150.765%;
     letter-spacing: -1.09px;
     text-transform: capitalize;
-    position: absolute;
-    bottom: 0;
-    left: 20%;
 }
 
 .sv-one {
@@ -418,19 +456,6 @@ img {
     font-weight: 400;
     line-height: normal;
     padding: 0 5rem;
-}
-
-.comma-left img {
-    width: 22px;
-}
-
-.comma-right img {
-    width: 22px;
-}
-
-.footer {
-    padding: 3rem;
-    background: linear-gradient(180deg, #00245af2 0%, #00245af2 100%), url("../img/footer-img.jpg");
 }
 
 /*------------------------------------------------------------------ about ----------------------------------------------------------*/
@@ -940,6 +965,15 @@ img {
 }
 
 /*------------------------------------------------------------------ footer ----------------------------------------------------------*/
+
+
+.footer {
+    padding: 3rem;
+    background: linear-gradient(180deg, #00245af2 0%, #00245af2 100%), url("../img/footer-img.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .footer h4 {
     font-size: 22px;

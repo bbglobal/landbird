@@ -1,4 +1,15 @@
-$('.testimonial-slider').slick({
+$(document).ready(() => {
+
+  const lenis = new Lenis();
+
+  function raf(time) {
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+
+  requestAnimationFrame(raf)
+
+  $('.testimonial-slider').slick({
     centerMode: true,
     centerPadding: '60px',
     slidesToShow: 3,
@@ -32,3 +43,7 @@ $('.testimonial-slider').slick({
       }
     ]
   });
+
+  
+
+})
