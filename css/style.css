@@ -119,6 +119,14 @@ a:hover {
     color: var(--bs-white);
 }
 
+.about-ul {
+    padding: 0 2rem;
+}
+
+.about-ul li {
+    color: var(--black);
+}
+
 .cta {
     background: var(--bs-white);
     display: flex;
