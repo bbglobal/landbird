@@ -4,6 +4,10 @@ $(document).ready(() => {
     window.location = "contact.html"
   })
 
+  $(".btn-bird").click(() => {
+    window.location = "contact.html"
+  })
+
   const lenis = new Lenis();
 
   function raf(time) {
@@ -18,8 +22,6 @@ $(document).ready(() => {
   const tl = gsap.timeline();
 
   SplitType.create('.hero-txt')
-  SplitType.create('.expertise-h2')
-  SplitType.create('.apart')
 
   gsap.set(".char", {
     yPercent: 100
@@ -41,19 +43,12 @@ $(document).ready(() => {
     yPercent: -100
   })
 
-  let chars = gsap.utils.toArray(".char");
-
-  chars.forEach((el, index) => {
-    gsap.to(el, {
-      scrollTrigger: {
-        trigger: el,
-      },
-      yPercent: 0,
-      duration: 1.2,
-      ease: "expo.out",
-      delay: index * 0.05,
-    })
-  });
+  gsap.to(".char", {
+    yPercent: 0,
+    duration: 1.2,
+    stagger: 0.05,
+    ease: "expo.out",
+  })
 
   tl.to(".line-inner", {
     yPercent: 0,
@@ -147,6 +142,5 @@ $(document).ready(() => {
       }
     ]
   });
-
 
 })
