@@ -39,12 +39,16 @@ $(document).ready(() => {
     tl.to(".bar", {
       yPercent: -100,
       stagger: 0.05,
-      ease: "power2.inOut"
+      ease: "power2.inOut",
+      duration: 1.5
     }).to(".pre-loader", {
       yPercent: -100
     })
 
     gsap.to(".char", {
+      scrollTrigger: {
+        trigger: ".char"
+      },
       yPercent: 0,
       duration: 1.2,
       stagger: 0.05,
@@ -65,20 +69,6 @@ $(document).ready(() => {
       ease: "expo.out",
       delay: -.6,
     }, "cool kids")
-
-    let expertImg = gsap.utils.toArray(".expertise");
-
-    expertImg.forEach((el, index) => {
-      gsap.from(el, {
-        scrollTrigger: {
-          trigger: el,
-        },
-        scale: 0,
-        duration: 1.7,
-        delay: index * 0.09,
-        ease: "expo.out"
-      });
-    })
 
 
     var rule = CSSRulePlugin.getRule(".apart-img::after");
