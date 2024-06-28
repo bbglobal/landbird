@@ -1,12 +1,8 @@
 $(document).ready(() => {
 
-  $(".btn-contact").click(() => {
+  $(".btn-contact, .btn-bird").click(() => {
     window.location = "contact.html"
-  })
-
-  $(".btn-bird").click(() => {
-    window.location = "contact.html"
-  })
+})
 
   const lenis = new Lenis();
 
