@@ -1053,12 +1053,13 @@ img {
 .office-txt p {
     color: #000000a1;
     text-align: center;
-    font-size: 0.70231rem;
+    font-size: 1.3rem;
     font-style: italic;
     font-weight: 400;
     line-height: normal;
     letter-spacing: -0.02106rem;
     text-transform: capitalize;
+    padding: 1rem;
 }
 
 .office-img img {
