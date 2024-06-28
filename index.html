@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Land Bird - Home</title>
 </head>
@@ -38,21 +39,45 @@
             </div>
 
             <ul class="d-flex align-items-center justify-content-center gap-5">
-                <li>
+                <li class="services position-relative">
                     <a href="./services.html">Services</a>
+                    <img src="./img/arrow-drop.svg" alt="icon">
+
+                    <ul
+                        class="drop-down d-flex align-items-start justify-content-between gap-3 flex-column position-absolute">
+                        <li class="drop-down-menu">
+                            <a href="./immigration.html">Immigration Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./real-state.html">Real Estate Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./business.html">Business Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./family.html">Family Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./wills.html">Wills, Estates and Trusts</a>
+                        </li>
+                    </ul>
                 </li>
+
                 <li>
                     <a href="./about.html">About</a>
                 </li>
+
                 <li>
                     <a href="./faq.html">FAQS</a>
                 </li>
+
                 <li>
                     <a href="./contact.html">Contact</a>
                 </li>
+
                 <li class="cta">
                     <img class="d-block" src="./img/phone.svg" alt="image">
-                    <a class="d-block" href="tel:+91 85956 79528">+91 85956 79528</a>
+                    <a class="d-block" href="tel:+1 (437) 240-9747">+1 (437) 240-9747</a>
                 </li>
             </ul>
         </nav>
@@ -76,8 +101,31 @@
         </ul>
 
         <ul class="mobile-inner">
-            <li class="nav-link">
-                <a href="./services.html">Services</a>
+            <li class="nav-link mob-services">
+                <label for="checkbox-drop">
+                    Services
+                </label>
+                <input type="checkbox" class="d-none" id="checkbox-drop">
+                <img src="./img/arrow-drop.svg" alt="icon">
+
+                <div class="mob-drop-down d-flex align-items-start justify-content-between gap-3 flex-column">
+                    <div class="drop-down-menu">
+                        <a href="./immigration.html">Immigration Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./real-state.html">Real Estate Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./business.html">Business Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./family.html">Family Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./wills.html">Wills, Estates and Trusts</a>
+                    </div>
+                </div>
+
             </li>
             <li class="nav-link">
                 <a href="./about.html">About</a>
@@ -94,20 +142,54 @@
 
     <main class="home">
 
-        <div class="hero-section">
-            <h1 class="hero-txt">Stress Less <br />
-                Get the Best </h1>
+        <div class="hero-warpper">
 
-            <div class="line-wrapper">
-                <div class="line-inner">Professional Consultation Anywhere!</div>
-            </div>
-            <div class="line-wrapper">
-                <div class="line-inner">Client-Centered Advocacy – Exceptional Results</div>
+            <div class="hero-section sl-one">
+                <h1 class="hero-txt">Stress Less <br />
+                    Get the Best </h1>
+
+                <div class="line-wrapper">
+                    <div class="line-inner">Professional Consultation Anywhere!</div>
+                </div>
+                <div class="line-wrapper">
+                    <div class="line-inner">Client-Centered Advocacy – Exceptional Results</div>
+                </div>
+
+                <button class="btn-bird mt-5">
+                    find out more
+                </button>
             </div>
 
-            <button class="btn-bird mt-5">
-                find out more
-            </button>
+            <div class="hero-section sl-two">
+                <h1 class="hero-txt">Trusted guidance. <br /> Every step of the way.</h1>
+
+                <div class="line-wrapper">
+                    <div class="line-inner">Dedicated to Achieving Justice and Exceptional Results,</div>
+                </div>
+                <div class="line-wrapper">
+                    <div class="line-inner">Guiding You Through the Complexities of Law.</div>
+                </div>
+
+                <button class="btn-bird mt-5">
+                    find out more
+                </button>
+            </div>
+
+            <div class="hero-section sl-three">
+                <h1 class="hero-txt">Justice. Expertise. <br /> Results.</h1>
+
+                <div class="line-wrapper">
+                    <div class="line-inner">Navigating Complex Legal Challenges with Precision and Ease,</div>
+                </div>
+                <div class="line-wrapper">
+                    <div class="line-inner">Your Legal Partners, Every Step of the Way.</div>
+                </div>
+
+                <button class="btn-bird mt-5">
+                    find out more
+                </button>
+            </div>
+
         </div>
 
         <div class="expertise-section">
@@ -164,7 +246,11 @@
 
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12 col-md-12 col-lg-12 col-xl-6 apart-bg"></div>
+                    <div class="col-12 col-md-12 col-lg-12 col-xl-6 apart-bg">
+                        <div class="apart-img">
+                            <img src="./img/home/set-us-apart.jpg" alt="image">
+                        </div>
+                    </div>
                     <div class="col-12 col-md-12 col-lg-12 col-xl-6" style="margin: auto;">
                         <h2 class="apart">
                             What Set Us Apart?
@@ -182,8 +268,7 @@
 
         <div class="our-expertise-seciton">
             <div class="expertise-head">
-                <div class="divider"></div>
-                <small class="txt-small txt-bl">why choose us</small>
+                <div class="divider" style="background: var(--black); width: 10%;"></div>
                 <h2 class="our-ex-h2">Our Expertise</h2>
             </div>
         </div>
@@ -202,7 +287,7 @@
                         of the way. Trust us to protect your rights and interests, delivering results that exceed your
                         expectations. Your satisfaction and peace of mind are our top priorities.</p>
 
-                    <div class="d-flex align-items-center justify-content-start gap-5">
+                    <div class="d-flex align-items-center justify-content-center gap-5">
                         <div class="trust">
                             <img src="./img/home/trust.svg" alt="trust">
                             <ul class="list">
@@ -223,7 +308,10 @@
         </div>
 
         <div class="bg-white p-5">
-            <div class="divider" style="background: var(--black); width: 100%;"></div>
+            <div class="expertise-head">
+                <div class="divider" style="background: var(--black); width: 10%;"></div>
+                <h2 class="our-ex-h2">Our Process</h2>
+            </div>
         </div>
 
         <div class="our-services container-fluid">
@@ -245,7 +333,7 @@
                 <div class="col-12 col-md-12 col-lg-4">
                     <div class="count">3</div>
                     <div class="service sv-three">
-                        <h5>your question</h5>
+                        <h5>your questions</h5>
                     </div>
                 </div>
             </div>
@@ -271,11 +359,7 @@
                         <p class="tes-feedback">
                             One of the greatest immigration consulting firms. They are a legitimate company that is
                             legally registered. They have a lot of expertise and a solid reputation in the immigration
-                            industry. Absolutely trustworthy individuals, as well as top-notch services. After
-                            collecting all the necessary documentation, I was able to obtain my student visa for Canada
-                            within a month. Every step of the procedure will be guided by Harleen Ma'am and Avneet
-                            Ma'am, who will also ensure that every document is accurate and comprehensive. Anybody
-                            looking for immigration should use Landbird's services, in my opinion.
+                            industry. Absolutely trustworthy individuals, as well as top-notch services.
                         </p>
                     </div>
 
@@ -315,10 +399,7 @@
                             One of the best consultancy for Immigration services..! They are legally registered and is a
                             legit company. They are well experienced and good standing in immigration field. Absolutely
                             trust worthy people and excellent services as well. I got my student visa to Canada within a
-                            month after successfully collecting all the documents. Harleen maam and Avneet Maam will
-                            guide you on every stage of the process and will make sure that each and every document is
-                            complete and there is no error in that. I recommend Landbird immigration services to anyone
-                            or everyone who is looking for immigration..!!
+                            month after successfully collecting all the documents.
                         </p>
                     </div>
 
@@ -508,8 +589,10 @@
     <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

@@ -20,10 +20,30 @@
             </div>
 
             <ul class="d-flex align-items-center justify-content-center gap-5">
-                <li>
+                <li class="services position-relative">
                     <a href="./services.html">Services</a>
+                    <img src="./img/arrow-drop.svg" alt="icon">
+
+                    <ul
+                        class="drop-down d-flex align-items-start justify-content-between gap-3 flex-column position-absolute">
+                        <li class="drop-down-menu">
+                            <a href="./immigration.html">Immigration Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./real-state.html">Real Estate Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./business.html">Business Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./family.html">Family Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./wills.html">Wills, Estates and Trusts</a>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                <li class="active">
                     <a href="./about.html">About</a>
                 </li>
                 <li>
@@ -34,7 +54,7 @@
                 </li>
                 <li class="cta">
                     <img class="d-block" src="./img/phone.svg" alt="image">
-                    <a class="d-block" href="tel:+91 85956 79528">+91 85956 79528</a>
+                    <a class="d-block" href="tel:+1 (437) 240-9747">+1 (437) 240-9747</a>
                 </li>
             </ul>
         </nav>
@@ -57,10 +77,33 @@
         </ul>
 
         <ul class="mobile-inner">
-            <li class="nav-link">
-                <a href="./services.html">Services</a>
+            <li class="nav-link mob-services">
+                <label for="checkbox-drop">
+                    Services
+                </label>
+                <input type="checkbox" class="d-none" id="checkbox-drop">
+                <img src="./img/arrow-drop.svg" alt="icon">
+
+                <div class="mob-drop-down d-flex align-items-start justify-content-between gap-3 flex-column">
+                    <div class="drop-down-menu">
+                        <a href="./immigration.html">Immigration Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./real-state.html">Real Estate Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./business.html">Business Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./family.html">Family Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./wills.html">Wills, Estates and Trusts</a>
+                    </div>
+                </div>
+
             </li>
-            <li class="nav-link">
+            <li class="nav-link active">
                 <a href="./about.html">About</a>
             </li>
             <li class="nav-link">
@@ -73,7 +116,7 @@
     </nav>
 
     <main class="about">
-        <div class="container-fluid">
+        <div class="container-fluid pt-5">
             <h2 class="h2">About Us</h2>
             <div class="divider"></div>
 
@@ -176,11 +219,10 @@
                             </a>
                         </div>
                     </div>
-
+                    
                     <div class="col-12 col-md-12 col-lg-4">
                         <h4 class="mb-5">Address</h4>
-                        <address>C-45, Ground floor, DDA Flats, Anand Vihar, Delhi, New Delhi, Delhi 110092, India
-                        </address>
+                        <address>23 Westmore Dr Unit #307, Etobicoke, ON M9V 3Y6</address>
                     </div>
                 </div>
             </div>

@@ -20,8 +20,28 @@
             </div>
 
             <ul class="d-flex align-items-center justify-content-center gap-5">
-                <li>
+                <li class="services position-relative">
                     <a href="./services.html">Services</a>
+                    <img src="./img/arrow-drop.svg" alt="icon">
+
+                    <ul
+                        class="drop-down d-flex align-items-start justify-content-between gap-3 flex-column position-absolute">
+                        <li class="drop-down-menu">
+                            <a href="./immigration.html">Immigration Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./real-state.html">Real Estate Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./business.html">Business Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./family.html">Family Law</a>
+                        </li>
+                        <li class="drop-down-menu">
+                            <a href="./wills.html">Wills, Estates and Trusts</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     <a href="./about.html">About</a>
@@ -29,17 +49,17 @@
                 <li>
                     <a href="./faq.html">FAQS</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="./contact.html">Contact</a>
                 </li>
                 <li class="cta">
                     <img class="d-block" src="./img/phone.svg" alt="image">
-                    <a class="d-block" href="tel:+91 85956 79528">+91 85956 79528</a>
+                    <a class="d-block" href="tel:+1 (437) 240-9747">+1 (437) 240-9747</a>
                 </li>
             </ul>
         </nav>
     </header>
-    
+
     <nav class="mobile-header">
         <input type="checkbox" id="checkbox">
         <ul class="d-flex align-items-center justify-content-between">
@@ -57,8 +77,29 @@
         </ul>
 
         <ul class="mobile-inner">
-            <li class="nav-link">
-                <a href="./services.html">Services</a>
+            <li class="nav-link mob-services">
+                <label for="checkbox-drop">
+                    Services
+                </label>
+                <input type="checkbox" class="d-none" id="checkbox-drop">
+                <img src="./img/arrow-drop.svg" alt="icon">
+                <div class="mob-drop-down d-flex align-items-start justify-content-between gap-3 flex-column">
+                    <div class="drop-down-menu">
+                        <a href="./immigration.html">Immigration Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./real-state.html">Real Estate Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./business.html">Business Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./family.html">Family Law</a>
+                    </div>
+                    <div class="drop-down-menu">
+                        <a href="./wills.html">Wills, Estates and Trusts</a>
+                    </div>
+                </div>
             </li>
             <li class="nav-link">
                 <a href="./about.html">About</a>
@@ -66,7 +107,7 @@
             <li class="nav-link">
                 <a href="./faq.html">FAQS</a>
             </li>
-            <li class="nav-link">
+            <li class="nav-link active">
                 <a href="./contact.html">Contact</a>
             </li>
         </ul>
@@ -208,7 +249,8 @@
                         <h4 class="mb-5">Socials</h4>
 
                         <div class="d-flex flex-column align-items-start justify-content-center gap-3">
-                            <a href="https://www.facebook.com/landbirdimmigration/videos/landbird-immigration/2119591711523673/" class="d-block" target="_blank">
+                            <a href="https://www.facebook.com/landbirdimmigration/videos/landbird-immigration/2119591711523673/"
+                                class="d-block" target="_blank">
                                 <img src="./img/socials/fb.svg" alt="socials">
                             </a>
 
@@ -224,7 +266,8 @@
 
                     <div class="col-12 col-md-12 col-lg-4">
                         <h4 class="mb-5">Address</h4>
-                        <address>C-45, Ground floor, DDA Flats, Anand Vihar, Delhi, New Delhi, Delhi 110092, India</address>
+                        <address>C-45, Ground floor, DDA Flats, Anand Vihar, Delhi, New Delhi, Delhi 110092, India
+                        </address>
                     </div>
                 </div>
             </div>
@@ -239,7 +282,7 @@
         </div>
     </footer>
 
-    
+
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
