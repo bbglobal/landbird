@@ -187,7 +187,7 @@ a:hover {
 
 .sl-three {
     background: linear-gradient(90deg, rgba(1, 36, 94, 0.65) 29.02%, rgba(2, 75, 196, 0.00) 99.71%), url("../img/home/justice.jpg");
-    
+
 }
 
 .hero-section {
@@ -747,7 +747,7 @@ img {
 }
 
 .form-head small {
-    font-size: 0.73425rem;
+    font-size: 1.35rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -1078,7 +1078,7 @@ img {
 }
 
 .contact-form {
-    width: 40%;
+    width: 100%;
     padding: 5vw;
     border-radius: 2.125rem;
     border: 1px solid #EFF0F6;
@@ -1264,10 +1264,6 @@ img {
         left: 3rem;
         top: 15rem;
         width: 80%;
-    }
-
-    .contact-form {
-        width: 100%;
     }
 }
 
