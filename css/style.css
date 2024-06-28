@@ -195,8 +195,8 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 15vw;
-    width: 100%;
     height: 90vh;
+    width: 100%;
 }
 
 .slick-next {
@@ -888,7 +888,7 @@ img {
 }
 
 .btn-card {
-    font-size: 0.76513rem;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -896,7 +896,6 @@ img {
     text-transform: capitalize;
     background: linear-gradient(180deg, #57AAF8 0%, #3C6A94 100%);
     width: 100%;
-    height: 1.5rem;
     border: none;
     position: absolute;
     bottom: 3rem;
