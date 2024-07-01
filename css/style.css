@@ -77,7 +77,7 @@ html.lenis body {
 
 .logo img {
     width: 250px;
-    padding: 30px;
+    padding: 1rem 0;
 }
 
 .mob-logo img {
@@ -400,7 +400,7 @@ img {
 }
 
 .our-expertise-seciton {
-    padding: 1rem;
+    padding: 3rem;
 }
 
 .expertise-bg {
@@ -1090,7 +1090,7 @@ img {
 
 
 .footer {
-    padding: 3rem;
+    padding: 1.5rem;
     background: linear-gradient(180deg, #00245af2 0%, #00245af2 100%), url("../img/footer-img.jpg");
     background-position: center top;
     background-repeat: no-repeat;
