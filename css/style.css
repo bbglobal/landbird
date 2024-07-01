@@ -272,7 +272,7 @@ a:hover {
 .expertise {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     justify-content: center;
     align-items: flex-end;
     height: 15.5rem;
@@ -1016,7 +1016,7 @@ img {
 .offices-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     gap: 1rem;
     justify-content: space-around;
     padding: 5vw;
