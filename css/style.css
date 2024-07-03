@@ -626,7 +626,7 @@ img {
 }
 
 .about-sec-two-wrapper {
-    padding: 10rem 0;
+    padding: 5rem 0;
 }
 
 .about-sec-two-txt {
@@ -979,6 +979,7 @@ img {
 }
 
 .btn-read-more {
+    display: none;
     margin-top: 1rem;
     background: transparent;
     border: none;
@@ -1270,7 +1271,7 @@ img {
 @media (max-width: 587.90px) {
     .about-sec-two-content-wrapper {
         left: 0rem;
-        top: 15rem;
+        top: 10rem;
         width: 100%;
     }
 
