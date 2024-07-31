@@ -72,7 +72,6 @@ $(document).ready(() => {
 
 
     var rule = CSSRulePlugin.getRule(".apart-img::after");
-    var imgWrapper = CSSRulePlugin.getRule(".img-wrapper::after");
 
     gsap.to(imgWrapper, {
       left: "100%",
@@ -90,13 +89,9 @@ $(document).ready(() => {
     img_tl.to(rule, {
       left: "-100%",
       duration: 1.7,
+      delay: 1.5,
       ease: "expo.inOut"
-    }).from(".apart-img img", {
-      scale: 1.4,
-      delay: -1.4,
-      duration: 1.7,
-      ease: "expo.inOut"
-    });
+    })
 
     $('.hero-warpper').slick({
       autoplay: true,
