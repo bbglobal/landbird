@@ -73,12 +73,6 @@ $(document).ready(() => {
 
     var rule = CSSRulePlugin.getRule(".apart-img::after");
 
-    gsap.to(imgWrapper, {
-      left: "100%",
-      duration: 1.7,
-      ease: "expo.inOut"
-    })
-
     const img_tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".apart-img img",
@@ -89,9 +83,13 @@ $(document).ready(() => {
     img_tl.to(rule, {
       left: "-100%",
       duration: 1.7,
-      delay: 1.5,
       ease: "expo.inOut"
-    })
+    }).from(".apart-img img", {
+      scale: 1.4,
+      delay: -1.4,
+      duration: 1.7,
+      ease: "expo.inOut"
+    });
 
     $('.hero-warpper').slick({
       autoplay: true,
@@ -150,11 +148,6 @@ $(document).ready(() => {
     clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
     ease: "expo.out",
     duration: 2,
-  }).to(".ceo-img", {
-    scale: 1,
-    delay: -2,
-    duration: 1.4,
-    ease: "expo.out"
-  });
+  })
 
 })
