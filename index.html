@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Land Bird - Home</title>
 </head>
@@ -15,7 +14,7 @@
 <body>
 
     <div class="pre-loader">
-        <div class="bar-wrapper">
+        <div class="bar-wrapper position-relative">
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
@@ -26,8 +25,14 @@
             <div class="bar"></div>
             <div class="bar"></div>
             <div class="bar"></div>
+            <img src="./img/logo.png" alt="loader image" id="loader" class="position-absolute" style="
+                top: 50%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                max-width: 100%;
+            ">
         </div>
-        <!-- <img src="./img/logo.png" alt="loader image"> -->
     </div>
 
     <header class="bird-header">
@@ -68,16 +73,12 @@
                 </li>
 
                 <li>
-                    <a href="./faq.html">FAQS</a>
-                </li>
-
-                <li>
                     <a href="./contact.html">Contact</a>
                 </li>
 
                 <li class="cta">
                     <img class="d-block" src="./img/phone.svg" alt="image">
-                    <a class="d-block" href="tel:+1 (437) 240-9747">+1 (437) 240-9747</a>
+                    <a class="d-block" href="tel:437 524 4256">437 524 4256</a>
                 </li>
             </ul>
         </nav>
@@ -129,9 +130,6 @@
             </li>
             <li class="nav-link">
                 <a href="./about.html">About</a>
-            </li>
-            <li class="nav-link">
-                <a href="./faq.html">FAQS</a>
             </li>
             <li class="nav-link">
                 <a href="./contact.html">Contact</a>
@@ -203,33 +201,43 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-3">
-                        <div class="expertise ex-two">
-                            <h5>Immigration Law</h5>
-                        </div>
+                        <a href="./immigration.html">
+                            <div class="expertise ex-two">
+                                <h5>Immigration Law</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-3">
-                        <div class="expertise ex-one">
-                            <h5>Real Estate Law</h5>
-                        </div>
+                        <a href="./real-state.html">
+                            <div class="expertise ex-one">
+                                <h5>Real Estate Law</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-6 col-xl-4 my-3">
-                        <div class="expertise ex-five">
-                            <h5>Business Law</h5>
-                        </div>
+                        <a href="./business.html">
+                            <div class="expertise ex-five">
+                                <h5>Business Law</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 col-xl-6 my-3">
-                        <div class="expertise ex-four">
-                            <h5>Family Law</h5>
-                        </div>
+                        <a href="./family.html">
+                            <div class="expertise ex-four">
+                                <h5>Family Law</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 col-xl-6 my-3">
-                        <div class="expertise ex-six">
-                            <h5>Wills, Estates And Trusts</h5>
-                        </div>
+                        <a href="./wills.html">
+                            <div class="expertise ex-six">
+                                <h5>Wills, Estates And Trusts</h5>
+                            </div>
+                        </a>
                     </div>
 
                     <div class="col-12 py-4 d-flex align-items-center justify-content-center">
@@ -315,22 +323,22 @@
 
         <div class="our-services container-fluid">
             <div class="row">
-                <div class="col-12 col-md-12 col-lg-4">
+                <!-- <div class="col-12 col-md-12 col-lg-4">
                     <div class="count">1</div>
                     <div class="service sv-one">
                         <h5>find a lawyer</h5>
                     </div>
-                </div>
+                </div> -->
 
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="count">2</div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="count">1</div>
                     <div class="service sv-two">
                         <h5>legal forms</h5>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-12 col-lg-4">
-                    <div class="count">3</div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="count">2</div>
                     <div class="service sv-three">
                         <h5>your questions</h5>
                     </div>
@@ -530,9 +538,6 @@
                             <a href="./about.html">About</a>
                         </p>
                         <p>
-                            <a href="./faq.html">FAQs</a>
-                        </p>
-                        <p>
                             <a href="./contact.html">Contact</a>
                         </p>
                     </div>
@@ -563,7 +568,7 @@
 
                     <div class="col-12 col-md-12 col-lg-4">
                         <h4 class="mb-5">Address</h4>
-                        <address>23 Westmore Dr Unit #307, Etobicoke, ON M9V 3Y6</address>
+                        <address>23 Westmore Dr, Etobicoke, ON M9V 3Y6</address>
                     </div>
                 </div>
             </div>
@@ -586,7 +591,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://unpkg.com/split-type"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

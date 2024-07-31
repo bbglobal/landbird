@@ -2,7 +2,7 @@ $(document).ready(() => {
 
   $(".btn-contact, .btn-bird").click(() => {
     window.location = "contact.html"
-})
+  })
 
   const lenis = new Lenis();
 
@@ -19,6 +19,7 @@ $(document).ready(() => {
     const tl = gsap.timeline();
 
     SplitType.create('.hero-txt')
+    SplitType.create('.about-sec-two-txt')
 
     gsap.set(".char", {
       yPercent: 100
@@ -32,7 +33,10 @@ $(document).ready(() => {
       opacity: 0
     })
 
-    tl.to(".bar", {
+    tl.to("#loader", {
+      opacity: 0,
+      display: "none"
+    }).to(".bar", {
       yPercent: -100,
       stagger: 0.05,
       ease: "power2.inOut",
@@ -68,6 +72,14 @@ $(document).ready(() => {
 
 
     var rule = CSSRulePlugin.getRule(".apart-img::after");
+    var imgWrapper = CSSRulePlugin.getRule(".img-wrapper::after");
+
+    gsap.to(imgWrapper, {
+      left: "100%",
+      duration: 1.7,
+      ease: "expo.inOut"
+    })
+
     const img_tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".apart-img img",
@@ -85,7 +97,6 @@ $(document).ready(() => {
       duration: 1.7,
       ease: "expo.inOut"
     });
-
 
     $('.hero-warpper').slick({
       autoplay: true,
@@ -130,5 +141,25 @@ $(document).ready(() => {
       ]
     });
   })
+
+  const imgReveal_tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: "img-reveal",
+      start: "center bottom",
+      end: "bottom top",
+      toggleActions: "play none none reverse",
+
+    },
+  })
+  imgReveal_tl.fromTo(".ceo-img", { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }, {
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+    ease: "expo.out",
+    duration: 2,
+  }).to(".ceo-img", {
+    scale: 1,
+    delay: -2,
+    duration: 1.4,
+    ease: "expo.out"
+  });
 
 })
