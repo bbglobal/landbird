@@ -33,13 +33,11 @@ $(document).ready(() => {
       opacity: 0
     })
 
-    tl.to("#loader", {
-      yPercent: -100,
-      ease: "elastic.in(1,0.3)"
+     tl.to("#loader", {
+      opacity: 0,
+      duration: 1.5,
       display: "none"
-    })
-    
-    tl.to(".bar", {
+    }).to(".bar", {
       yPercent: -100,
       stagger: 0.05,
       ease: "power2.inOut",
