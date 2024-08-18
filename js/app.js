@@ -35,8 +35,11 @@ $(document).ready(() => {
 
     tl.to("#loader", {
       yPercent: -100,
+      ease: "elastic.in(1,0.3)"
       display: "none"
-    }).to(".bar", {
+    })
+    
+    tl.to(".bar", {
       yPercent: -100,
       stagger: 0.05,
       ease: "power2.inOut",
