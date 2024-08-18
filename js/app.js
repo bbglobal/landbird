@@ -36,13 +36,13 @@ $(document).ready(() => {
     tl.to("#loader", {
       opacity: 0,
       display: "none"
+    }).to(".pre-loader", {
+      yPercent: -100
     }).to(".bar", {
       yPercent: -100,
       stagger: 0.05,
       ease: "power2.inOut",
       duration: 1.5
-    }).to(".pre-loader", {
-      yPercent: -100
     })
 
     gsap.to(".char", {
