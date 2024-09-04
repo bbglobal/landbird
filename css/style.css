@@ -138,6 +138,36 @@ html.lenis body {
     transition: visibility 0s, opacity 0.2s linear;
 }
 
+/* contact us drop down menu  */
+
+/* Existing styles for services dropdown */
+.services:hover>.drop-down,
+.drop-down:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Add styles for the "Contact" dropdown */
+.position-relative:hover>.drop-down,
+.position-relative .drop-down:hover {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* General dropdown styles */
+.drop-down {
+    width: max-content;
+    background: linear-gradient(90deg, #024bc4a8 0%, var(--primary-bird) 100%);
+    backdrop-filter: blur(42.95px);
+    padding: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    top: 2rem;
+    transition: visibility 0s, opacity 0.2s linear;
+}
+
+/* contact is menu css end  */
+
 ul {
     margin-bottom: 0;
 }
