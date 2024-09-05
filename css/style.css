@@ -1119,6 +1119,12 @@ img {
 
 /*------------------------------------------------------------------ footer ----------------------------------------------------------*/
 
+.footer-social i {
+    margin-right: 8px; /* Adjust the value as needed */
+    padding-top: 10px;
+}
+
+
 
 .footer {
     padding: 1.5rem;
