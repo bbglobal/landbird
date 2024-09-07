@@ -243,7 +243,7 @@ a:hover {
     font-family: 'slick';
     font-size: 35px;
     opacity: .75;
-    color: var(--sky-bird);
+    color: #042862;
 }
 
 .line {
@@ -1315,3 +1315,24 @@ img {
         width: 100%;
     }
 }
+
+
+
+/* our process section button css  */
+
+
+.custom-btn {
+    background-color: #042862;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+  }
+  
+  .custom-btn:hover {
+    background-color: #0046a1; /* A lighter shade for hover */
+    color: white;
+  }
+  
+
