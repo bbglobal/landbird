@@ -1125,18 +1125,22 @@ img {
 
 
 /* Adjusting the font size of the email address */
-.contact-info a[href^="mailto:"] {
-    font-size: 11px; /* Adjust the size as needed, e.g., 12px, 14px, etc. */
-  }
-  
 
+
+/* .contact-info  {
+    font-size: 14px; 
+  } */
+  
+/* .icon-box{
+padding-right: 30px;
+} */
 
 
 
 
 
 .footer-social i {
-    margin-right: 8px; /* Adjust the value as needed */
+    margin-right: 8px; 
     padding-top: 10px;
 }
 
