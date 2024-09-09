@@ -25,16 +25,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     try {
         // Server settings
         $mail->isSMTP();                                            // Send using SMTP
-        $mail->Host       = 'landbirdlaw.com';                       // Set the SMTP server to send through
+        $mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'your-email@gmail.com';                 // SMTP username (replace with your email)
-        $mail->Password   = 'your-email-password';                  // SMTP password (replace with your password)
+        $mail->Username   = 'brandboostersglobal@gmail.com';                 // SMTP username (replace with your email)
+        $mail->Password   = 'rbns cjcx mrwx ynug';                  // SMTP password (replace with your password)
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption
         $mail->Port       = 465;                                    // TCP port to connect to
 
         // Recipients
         $mail->setFrom($email, $name);                              // Set sender's email and name
-        $mail->addAddress('landbirdlaw@gmail.com', 'Landbird Law'); // Add recipient
+        $mail->addAddress('brandboostersglobal@gmail.com', 'Landbird Law'); // Add recipient
 
         // Content
         $mail->isHTML(true);                                        // Set email format to HTML
