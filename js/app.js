@@ -35,7 +35,9 @@ $(document).ready(() => {
 
     tl.to("#loader", {
       opacity: 0,
-      display: "none"
+      display: "none",
+      duration: 0.5 // Changed from 1.5 to 0.5 for faster fade-out
+
     }).to(".bar", {
       yPercent: -100,
       stagger: 0.05,
