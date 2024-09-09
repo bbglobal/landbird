@@ -1126,7 +1126,7 @@ img {
 
 /* Adjusting the font size of the email address */
 .contact-info a[href^="mailto:"] {
-    font-size: 13px; /* Adjust the size as needed, e.g., 12px, 14px, etc. */
+    font-size: 11px; /* Adjust the size as needed, e.g., 12px, 14px, etc. */
   }
   
 

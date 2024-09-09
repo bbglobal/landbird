@@ -133,7 +133,7 @@
       <div class="container-fluid">
         <h2 class="h2">Contact Us</h2>
         <div class="divider"></div>
-
+    
         <div class="offices row">
           <div class="offices-wrapper col-12 col-md-12 col-lg-6">
             <div class="office">
@@ -141,15 +141,15 @@
                 <div class="office-img">
                   <img src="./img/arc/head-office.png" alt="head-office" />
                 </div>
-
+    
                 <div class="office-title">
                   <h3>India Office</h3>
                 </div>
-
+    
                 <div class="office-txt">
                   <p>
-                    C-45, Ground floor, DDA Flats, Anand Vihar, Delhi, New
-                    Delhi, Delhi 110092, India
+                    C-45, Ground floor, DDA Flats, Anand Vihar, Delhi, New Delhi,
+                    Delhi 110092, India
                     <br />
                     +91 8595679528
                   </p>
@@ -157,42 +157,54 @@
               </div>
             </div>
           </div>
-
+    
           <div class="contact-form-wrapper col-12 col-md-12 col-lg-6">
-            <form action="get" class="contact-form">
+            <!-- Updated Form Action and Method -->
+            <form action="contact.php" method="post" class="contact-form">
               <div class="form-head">
                 <small>Please Fill The Form Below</small>
                 <small>so we can get in touch with you.</small>
                 <div class="li"></div>
               </div>
-
+    
               <br /><br />
-
+    
               <div class="form-input">
                 <label for="name">Your Name</label>
-                <input type="text" id="name" placeholder="Your Name" />
+                <input type="text" name="name" id="name" placeholder="Your Name" />
               </div>
-
+    
               <div class="form-input">
                 <label for="p-number">Phone Number</label>
                 <input
                   type="text"
+                  name="p-number"
                   id="p-number"
                   placeholder="(123) 456 - 7890"
                 />
               </div>
-
+    
               <div class="form-input">
                 <label for="email">Your Email</label>
-                <input type="email" id="email" placeholder="Your Email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email"
+                />
               </div>
-
+    
               <div class="form-input">
                 <label for="message">Comment or Message</label>
-                <textarea name="message" id="message" rows="10"></textarea>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="10"
+                  placeholder="Write your message here"
+                ></textarea>
               </div>
-
-              <button class="btn-bird">submit</button>
+    
+              <button type="submit" class="btn-bird">Submit</button>
             </form>
           </div>
         </div>
