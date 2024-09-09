@@ -1090,7 +1090,10 @@ img {
     line-height: normal;
     letter-spacing: -0.02106rem;
     text-transform: capitalize;
-    padding: 1rem;
+    /* padding: 1rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
 }
 
 .office-img img {
