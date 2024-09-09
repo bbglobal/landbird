@@ -1122,6 +1122,19 @@ img {
 
 /*------------------------------------------------------------------ footer ----------------------------------------------------------*/
 
+
+
+/* Adjusting the font size of the email address */
+.contact-info a[href^="mailto:"] {
+    font-size: 13px; /* Adjust the size as needed, e.g., 12px, 14px, etc. */
+  }
+  
+
+
+
+
+
+
 .footer-social i {
     margin-right: 8px; /* Adjust the value as needed */
     padding-top: 10px;
@@ -1142,6 +1155,7 @@ img {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: -10px;
 }
 
 .footer .email {
