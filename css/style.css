@@ -1399,3 +1399,63 @@ padding-right: 30px;
     margin-right: 0.5rem; /* Space between icon and text */
   }
   
+
+
+
+.container.mt-5 h2 {
+    color: black;
+}
+.container.mt-5 h5 {
+    color: black;
+}
+
+
+
+
+  .team-member {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .team-member h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .team-member p {
+    color: #666;
+  }
+  /* .team-member img {
+    z-index: 1000;
+    position: relative;
+}
+.team-member img {
+    display: block;
+    visibility: visible;
+    width: auto;
+    height: auto;
+} */
+
+
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #4b4b4b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Adds space between the columns */
+}
+
+.team-member:last-child {
+    margin-right: 0; /* Prevents extra margin on the last team member */
+}
