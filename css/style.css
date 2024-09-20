@@ -285,7 +285,7 @@ a:hover {
 
 .expertise-section {
     padding: 10vh 10vw;
-    background: linear-gradient(180deg, #01245eeb 0%, #024bc4eb 100%), url("../img/home/bg-one.jpg");
+    background: linear-gradient(180deg, #024bc4eb 0%, #011f50eb 100%), url("../img/home/bg-one.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -1402,17 +1402,12 @@ padding-right: 30px;
 
 
 
-<<<<<<< HEAD
-
-
-=======
 .container.mt-5 h2 {
     color: black;
 }
 .container.mt-5 h5 {
     color: black;
 }
->>>>>>> 5f106bcf99787dd04f167cea9aa4f21d67a2e657
 
 
 
@@ -1438,9 +1433,6 @@ padding-right: 30px;
   .team-member p {
     color: #666;
   }
-<<<<<<< HEAD
-  
-=======
   /* .team-member img {
     z-index: 1000;
     position: relative;
@@ -1467,4 +1459,3 @@ padding-right: 30px;
 .team-member:last-child {
     margin-right: 0; /* Prevents extra margin on the last team member */
 }
->>>>>>> 5f106bcf99787dd04f167cea9aa4f21d67a2e657
