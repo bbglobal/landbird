@@ -137,19 +137,15 @@ $(document).ready(() => {
     });
   })
 
-  const imgReveal_tl = gsap.timeline({
-    scrollTrigger: {
-      trigger: "img-reveal",
-      start: "center bottom",
-      end: "bottom top",
-      toggleActions: "play none none reverse",
+  const imgReveal_tl = gsap.timeline({});
+imgReveal_tl.fromTo(".ceo-img", 
+  { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }, 
+  { 
+    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", 
+    ease: "expo.out", 
+    duration: 2 
+  }
+);
 
-    },
-  })
-  imgReveal_tl.fromTo(".ceo-img", { clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)" }, {
-    clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-    ease: "expo.out",
-    duration: 2,
-  })
 
 })
