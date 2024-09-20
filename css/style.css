@@ -98,7 +98,7 @@ html.lenis body {
 .bird-header {
     background: linear-gradient(90deg, #024bc4a8 0%, var(--primary-bird) 100%);
     backdrop-filter: blur(42.95px);
-    padding: 0 5rem;
+    padding: 0 3rem;
     position: sticky;
     top: 0;
     width: 100%;
