@@ -1402,8 +1402,17 @@ padding-right: 30px;
 
 
 
+<<<<<<< HEAD
 
 
+=======
+.container.mt-5 h2 {
+    color: black;
+}
+.container.mt-5 h5 {
+    color: black;
+}
+>>>>>>> 5f106bcf99787dd04f167cea9aa4f21d67a2e657
 
 
 
@@ -1429,4 +1438,33 @@ padding-right: 30px;
   .team-member p {
     color: #666;
   }
+<<<<<<< HEAD
   
+=======
+  /* .team-member img {
+    z-index: 1000;
+    position: relative;
+}
+.team-member img {
+    display: block;
+    visibility: visible;
+    width: auto;
+    height: auto;
+} */
+
+
+
+.team-member {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #4b4b4b;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Adds space between the columns */
+}
+
+.team-member:last-child {
+    margin-right: 0; /* Prevents extra margin on the last team member */
+}
+>>>>>>> 5f106bcf99787dd04f167cea9aa4f21d67a2e657
